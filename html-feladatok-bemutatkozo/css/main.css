@@ -9,9 +9,11 @@ header {
     font-size: 20;
 }
 
-nav ul{
-    color: black;
-    font-size: 16px;
+a.button {
+    appearance: button;
+    text-decoration: black;
+    color: rgb(150 150 150);
+    list-style-type: none;
 }
 
 #myBtn {
@@ -56,7 +58,7 @@ nav ul{
 
 .grid-container {
     display: grid;
-    grid-template-columns:32% 32% 32%;
+    grid-template-columns:33% 33% 33%;
     grid-template-rows: auto;
     grid-gap: 10px;
 }
@@ -79,20 +81,8 @@ nav ul{
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin: -5px 10px 0px 5px;
+    margin: -3px 10px 0px 5px;
     box-shadow: 3px 3px 3px 3px rgb(200, 200, 200);
 }
-
-#message {
-    width: 20%;
-    height: 30px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 12px;
-    resize: none;
-  }
 
   
