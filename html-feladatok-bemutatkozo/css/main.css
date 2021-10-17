@@ -59,6 +59,16 @@ p, ol {
     text-align: justify;
 }
 
+.numbered {
+    margin-left: 20px;
+}
+
+p.works {
+    margin-left: 10px;
+    width: 375px;
+    text-align: justify;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns:33% 33% 33%;
