@@ -13,8 +13,6 @@ a.button {
     appearance: button;
     text-decoration: black;
     color: rgb(150 150 150);
-    list-style-type: none;
-    border-radius: 4px;
 }
 
 #myBtn {
@@ -89,6 +87,4 @@ p, ol {
     object-fit: cover;
     margin: -3px 10px 0px 5px;
     box-shadow: 3px 3px 3px 3px rgb(200, 200, 200);
-}
-
-  
+}  
