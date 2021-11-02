@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Modal</h1>
+  <button id="openBtn">Open Modal</button>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <header>Modal text
+        <span class="close">&times;</span>
+      </header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sagittis
+        lorem euismod tortor egestas blandit. Fusce posuere sed ligula sit amet aliquam.
+        Quisque consequat metus ac elit finibus sagittis. Ut quis aliquet sem.
+        Cras gravida nunc et justo varius faucibus. Aliquam maximus ex tortor,
+        non luctus ligula tristique ut. Sed vel dolor a velit auctor suscipit vitae in odio.</p>
+      <footer>
+        <button id=cancelBtn>Cancel</button>
+        <button id=okeyBtn>Okey</button>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    let modal = document.getElementById("myModal");
+    let openBtn = document.getElementById("openBtn");
+    let span = document.getElementsByClassName("close")[0];
+    
+    openBtn.onclick = () => document.getElementById("myModal").classList.add("modalClose");
+
+    span.onclick = () => document.getElementById("myModal").classList.remove("modalClose");
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        document.getElementById("myModal").classList.remove("modalClose");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
