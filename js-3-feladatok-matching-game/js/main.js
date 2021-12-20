@@ -5,7 +5,6 @@ let firstCard;
 let secondCard;
 let lock = false;
 let matches = 0;
-let counts = 0;
 let timerOn = false;
 let currentTime = 0;
 
@@ -25,6 +24,9 @@ function counter() {
 
 setInterval(() => {
     if (!timerOn) {
+        return;
+    }
+    if (matches === 5) {
         return;
     }
     currentTime++;
@@ -82,7 +84,6 @@ function flipCard() {
             cards.forEach(card => card.addEventListener('click', flipCard));
             shuffle();
             matches = 0;
-            counts = 0;
             timerOn = false;
             currentTime = 0;
         }, 5000);
