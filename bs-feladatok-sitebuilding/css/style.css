@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Lato:wght@300&family=Mulish:wght@300&display=swap');
+
+.catamaran {
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+}
+
+.lato {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.mulish {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+}
+
+#nav {
+    background-image: url('../img/bg-pattern.png'), linear-gradient(to right, #da2431, #7a4397);
+}
+
+#nav img {
+    height: 80%;
+    width: auto;
+}
+
+.btn:hover {
+    background: #fdcc52;
+    border-color: #fdcc52;
+    transition: all 0.3s ease;
+}
+
+.demo1 {
+    padding: 1.2rem;
+    top: 20px;
+}
+
+.demo2 {
+    padding: 2rem;
+}
+
+.logo img {
+    width: 200px;
+}
+
+#download {
+    background-color: #fdcb4e;
+}
+
+.img {
+    background-image: url(../img/bg-cta.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+#img {
+    height: 200px;
+}
+
+#contact {
+    background-color: #fdcb4e;
+}
